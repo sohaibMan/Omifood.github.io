@@ -1,0 +1,238 @@
+/* bellow 1344px smalle lapotops */
+@media (max-width: 84em) {
+  /* .hero {
+    max-width: 90vw;
+  } */
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-item-3 {
+    border-radius: 0;
+  }
+  .gallery-item-10 {
+    border-radius: 0;
+  }
+
+  .gallery-item-11 {
+    border-radius: 0 0 0 15px;
+  }
+  .gallery-item-2 {
+    border-radius: 0 15px 0 0;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+    row-gap: 9.6rem;
+  }
+}
+/* Bellow 1200px (landscape Tablets) */
+@media (max-width: 75em) {
+  html {
+    font-size: 54%;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .main-nav-list {
+    gap: 3.6rem;
+  }
+  .testimonials-container {
+    padding: 4.6rem 3.2rem;
+  }
+  .princing-plan {
+    width: 85%;
+  }
+}
+/* 62 is 990 px for tabltes */
+@media (max-width: 62em) {
+  /* 8px */
+  html {
+    font-size: 50%;
+    color: red;
+  }
+  .margin-right-sm {
+    margin-right: 1.2rem !important;
+  }
+}
+/* 944px Mobile */
+@media (max-width: 59em) {
+  .mobile-nav {
+    display: block;
+  }
+  .header {
+    position: relative;
+  }
+  .main-nav {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0;
+    this  is the wrong way coz we will stil have the cursor active */
+    /* display: none; */
+    /* dispplay:none doesn't allows to do anmiatoons */
+    transition: all 0.5s ease-in;
+    /* in slow to fast
+    out fast to slow  */
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+
+    /* 
+      .nav-open .btn-mobile-nav {
+    cursor: pointer;
+      .main-nav-link {
+    cursor: default;
+  }    pointer-events(all the events to link or buttons)
+  } */
+    visibility: hidden;
+    /* telling screen readers that this elemtns is hidden */
+  }
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4rem !important;
+  }
+  .main-nav-link {
+    font-weight: 600;
+    font-size: 2.8rem !important;
+  }
+
+  /* the open stat */
+  .nav-open .main-nav {
+    opacity: 98%;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+}
+@media (max-width: 50em) {
+  .princing-plan {
+    width: 90%;
+  }
+}
+
+/* 880px  */
+@media (max-width: 55em) {
+  /* 8px */
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 5.8rem;
+  }
+  .hero-img {
+    width: 60%;
+  }
+  .hero-img-box {
+    text-align: center;
+  }
+  .main-nav-list {
+    gap: 2.5rem;
+  }
+  .logos img {
+    height: 2.4rem;
+  }
+  .delivered-imgs img {
+    height: 6.8rem;
+    width: 6.8rem;
+  }
+  .delivered-meals {
+    margin-top: 5rem;
+  }
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+  .grid {
+    column-gap: 3.2rem;
+    row-gap: 4.8rem;
+  }
+  .container {
+    /* 1140px */
+    max-width: 90vw;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+  .meal-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  .cta {
+    grid-template-columns: 3fr 2.3fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .btn--form {
+    margin-top: 1.5rem;
+  }
+}
+
+/*  smaller tablets 704px  */
+@media (max-width: 45em) {
+  .grid--4-cols,
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10rem;
+  }
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .meal-content {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+    margin-bottom: 4.8rem;
+  }
+  .princing-plan {
+    width: 100%;
+  }
+  .Prices.grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .Prices.container {
+    max-width: 50vw;
+  }
+  .princing-plan-text {
+    font-size: 2rem;
+  }
+
+  .grid--footer.grid {
+    row-gap: 8rem;
+    column-gap: 4rem;
+  }
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .nav-col {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+    grid-row: 2;
+  }
+}
