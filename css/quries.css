@@ -1,4 +1,5 @@
 /* bellow 1344px smalle lapotops */
+/* u can add new sizes  */
 @media (max-width: 84em) {
   /* .hero {
     max-width: 90vw;
@@ -134,7 +135,7 @@
   }
 }
 
-/* 880px  */
+/* 880px */
 @media (max-width: 55em) {
   /* 8px */
   .hero {
@@ -234,5 +235,6 @@
   .address-col {
     grid-column: span 3;
     grid-row: 2;
+    /* the addrese  */
   }
 }
