@@ -234,6 +234,7 @@
   .logo-col,
   .address-col {
     grid-column: span 3;
+    /*  3 columns */
     grid-row: 2;
     /* the addrese  */
   }
