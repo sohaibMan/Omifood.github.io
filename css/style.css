@@ -87,7 +87,7 @@
   margin: 0 auto;
   padding: 0 3.2rem;
   display: grid;
-  grid-template-columns: fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
   align-items: center;
 }
