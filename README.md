@@ -3,6 +3,7 @@
 sample website with html css and a little of js 
 the idea is 
 (hosted in https://sabsoba.000webhostapp.com/)
+https://sohaibman.github.io/Omifood.github.io/
 
 ## About Omnifood
 
